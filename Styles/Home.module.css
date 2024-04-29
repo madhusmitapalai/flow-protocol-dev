@@ -1,0 +1,22 @@
+.dashboard_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.group_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.single_card {
+    background-color: #EEEEEE;
+    border: 1px solid #EEEEEE;
+    width: 400px;
+}
+
+.ant-card .ant-card-body {
+    padding: 0px !important;
+    border-radius: 0;
+}

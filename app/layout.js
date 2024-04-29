@@ -1,9 +1,8 @@
 import { Inter } from "next/font/google";
+// import "antd/dist/antd.css";
 import "./globals.css";
 import Topbar from "@/Components/Topbar";
-import Link from "next/link";
 import Header from "@/Components/Header";
-// import Sidebar from "@/Components/Sidebars";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning={true}>
         <Header />
-        <div style={{ display: "flex" }}>
+        <div className="sub_container">
           <Topbar />
           {children}
         </div>

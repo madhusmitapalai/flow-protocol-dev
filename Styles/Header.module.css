@@ -1,0 +1,66 @@
+.header {
+    /* position: sticky; */
+    /* top: 0; */
+    width: 100%;
+    background-color: transparent;
+    height: 65px;
+    box-shadow: rgba(98, 98, 98, 0.16) 0px 1px 4px;
+    border-bottom: 0.5px solid #F9FAFC;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+.logo_div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.header_title {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.button_div {
+    text-align: center;
+}
+
+.collectBtn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #2F23F3;
+    color: #ffff;
+    padding: 8px, 10px, 8px, 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/* 
+.topbar>span {
+    padding-left: 5px;
+}
+
+.topbar div {
+    cursor: pointer;
+}
+
+.topbar div.active {
+    color: blue;
+}
+
+.topbar div.active img {
+    fill: blue;
+    /* Assuming SVG fill color 
+} */
