@@ -1,6 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Topbar from "@/Components/Topbar";
+import Link from "next/link";
+import Header from "@/Components/Header";
+// import Sidebar from "@/Components/Sidebars";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -11,9 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Topbar />
-        {children}
+      <body className={inter.className} suppressHydrationWarning={true}>
+        <Header />
+        <div style={{ display: "flex" }}>
+          <Topbar />
+          {children}
+        </div>
       </body>
     </html>
   );
