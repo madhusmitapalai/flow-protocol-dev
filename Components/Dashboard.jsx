@@ -28,7 +28,7 @@ const Dashboard = () => {
           <Select
             className={styles.selectOption}
             onChange={handleSelectChange}
-            // style={{ width: "350px", height: "40px" }}
+            style={{ border: "none", boxShadow: "none" }}
             placeholder="Select an item"
           >
             {items.map((item) => (

@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-// import "antd/dist/antd.css";
+
 import "./globals.css";
 // import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Topbar from "@/Components/Topbar";
