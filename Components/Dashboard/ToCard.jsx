@@ -1,13 +1,3 @@
-// import React from 'react'
-
-// const ToCard = () => {
-//   return (
-//     <div>ToCard</div>
-//   )
-// }
-
-// export default ToCard
-
 import { Select } from "antd";
 import Image from "next/image";
 import React from "react";
@@ -42,21 +32,6 @@ const ToCard = ({ items, setSelectedItem }) => {
             </Option>
           ))}
         </Select>
-      </div>
-      <div className={`${styles.singleCard} ${styles.global_Card_Height}`}>
-        <div className={styles.firstInnercard}>
-          <span>You are sending</span>
-          <h1>0.1</h1>
-        </div>
-        <hr className={styles.hr} />
-        <span className={styles.fromCard}>
-          <Image
-            src={optionImg2}
-            alt={"option-image"}
-            className={styles.card1Img}
-          />
-          <span>ETH </span>
-        </span>
       </div>
     </section>
   );

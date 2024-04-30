@@ -12,6 +12,7 @@ import optionImg1 from "../../assets/option1.png";
 import optionImg2 from "../../assets/option2.png";
 import FromCard from "./FromCard";
 import ToCard from "./ToCard";
+import Calculation from "./Calculation";
 const { Option } = Select;
 const Dashboard = () => {
   const items = [
@@ -28,19 +29,8 @@ const Dashboard = () => {
         <ArrowDownOutlined />
       </div>
       <ToCard items={items} setSelectedItem={setSelectedItem} />
-
-      {/* <Card className={styles.thirdDiv}>
-        <div className={styles.card_div}>
-          <span>Transfer Time</span>
-          <span>Est. Output</span>
-          <span>Fees</span>
-        </div>
-        <div className={styles.card_div}>
-          <span>~ 10 sec</span>
-          <span>0.009ETH</span>
-          <span>$ 2.06</span>
-        </div>
-      </Card> */}
+      <Calculation />
+      
     </div>
   );
 };
