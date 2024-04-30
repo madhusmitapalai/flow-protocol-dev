@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Card, Dropdown, Menu, Space } from "antd";
 import { DownOutlined, RadarChartOutlined } from "@ant-design/icons";
+import styles from "../Styles/Dashboard.module.css";
 // import style from "../Styles/Home.module.css";
 // const Dashboard = () => {
 // const items = [
@@ -67,12 +68,13 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="dashboard_container">
-      <div className="group_card">
-        <Card className="single_card">
+    <div className={styles.dashboard_container}>
+      <div className={styles.group_card}>
+        <Card className={styles.single_card}>
           <Dropdown.Button
+            style={{ width: "380px" }}
             overlay={
-              <Menu onClick={handleMenuClick}>
+              <Menu onClick={handleMenuClick} style={{ minWidth: "150px" }}>
                 {items.map((item) => (
                   <Menu.Item key={item.key}>
                     {item.icon} {item.value}
@@ -89,14 +91,14 @@ const Dashboard = () => {
             From
           </Dropdown.Button>
         </Card>
-        <Card className="single_card">Hello</Card>
-        <Card className="third_div">
-          <div className="card_div">
+        <Card className={styles.single_card}>Hello</Card>
+        <Card className={styles.third_div}>
+          <div className={styles.card_div}>
             <span>Transfer Time</span>
             <span>Est. Output</span>
             <span>Fees</span>
           </div>
-          <div className="card_div">
+          <div className={styles.card_div}>
             <span>~ 10 sec</span>
             <span>0.009ETH</span>
             <span>$ 2.06</span>
