@@ -28,6 +28,7 @@ const AddTokenModal = ({ isOpen, setIsOpen }) => {
       footer={null}
       onCancel={() => setIsOpen(false)}
       className={styles.tokenModal}
+      centered
     >
       <Search
         placeholder="Search tokens"

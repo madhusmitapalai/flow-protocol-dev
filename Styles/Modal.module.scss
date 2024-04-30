@@ -7,7 +7,8 @@
     margin-bottom: 15px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: normal;
   }
   .token_container {
     .all_token_card {
@@ -46,14 +47,27 @@
       justify-content: space-between;
       padding: 8px;
       margin-bottom: 5px;
+      &:hover {
+        background-color: rgb(187, 99, 245);
+        .token_span,
+        h3 {
+          color: #fff;
+        }
+        .header_text {
+          color: #fff;
+        }
+      }
       .coin_img {
         width: 40px;
         height: 40px;
       }
+      .sub_head_text {
+        color: #000;
+        font-weight: 600;
+        font-size: 18px;
+      }
     }
-    .token_cards :hover {
-      background-color: #2d23f3;
-    }
+
     .iner_token_card {
       display: flex;
       gap: 20px;
@@ -62,10 +76,5 @@
         color: #878794;
       }
     }
-  }
-  .sub_head_text {
-    color: #0000;
-    font-weight: 600;
-    font-size: 18px;
   }
 }
