@@ -102,3 +102,7 @@ a, ul {
   width: 20px;
   height: 20px;
 }
+
+.ant-dropdown-button {
+  width: 390px !important;
+}

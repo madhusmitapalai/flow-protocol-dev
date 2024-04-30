@@ -1,9 +1,11 @@
 import { Inter } from "next/font/google";
 // import "antd/dist/antd.css";
 import "./globals.css";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Topbar from "@/Components/Topbar";
 import Header from "@/Components/Header";
-
+import Theme from "@/Theme/themeConfig";
+import { ConfigProvider } from "antd";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -15,11 +17,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning={true}>
-        <Header />
-        <div className="sub_container">
-          <Topbar />
-          {children}
-        </div>
+        <ConfigProvider theme={Theme}>
+          <Header />
+          <div className="sub_container">
+            <Topbar />
+            <AntdRegistry>{children}</AntdRegistry>
+          </div>
+        </ConfigProvider>
       </body>
     </html>
   );

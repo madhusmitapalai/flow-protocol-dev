@@ -12,7 +12,7 @@ const Header = () => {
         <h3 className="header_title">Flow Protocol</h3>
       </div>
       <div className={styles.button_div}>
-        <Button type="button" className={styles.collectBtn}>
+        <Button type="primary" className={styles.collectBtn}>
           <Image src={wallet} alt="wallet-img" />
           Collect Wallet
         </Button>
