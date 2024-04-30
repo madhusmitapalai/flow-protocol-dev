@@ -1,5 +1,5 @@
 import { Button } from "antd";
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../Styles/Dashboard.module.scss";
 import ethLogo from "../../assets/ethLogo.png";
 import Image from "next/image";
@@ -9,7 +9,12 @@ import {
   ArrowDownOutlined,
   PlusCircleOutlined,
 } from "@ant-design/icons";
+import AddTokenModal from "./AddTokenModal";
 const Calculation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const showModal = () => {
+    setIsOpen(true);
+  };
   return (
     <div className={styles.calucation_div}>
       <div className={styles.reciept_btn_div}>
@@ -19,7 +24,11 @@ const Calculation = () => {
         </Button>
       </div>
       <div className={styles.brige_btn_div}>
-        <Button type="primary" className={styles.bridge_btn}>
+        <Button
+          type="primary"
+          className={styles.bridge_btn}
+          onClick={showModal}
+        >
           Bridge
         </Button>
       </div>
@@ -44,6 +53,7 @@ const Calculation = () => {
           <span>$ 2.06</span>
         </div>
       </div>
+      <AddTokenModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };

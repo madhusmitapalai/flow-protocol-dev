@@ -107,3 +107,27 @@ h1, h2, h3, h4, h5, h6, span {
   align-items: center;
   justify-content: center;
 }
+
+.ant-modal-header {
+  background-color: var(--dark-blue);
+}
+
+.ant-modal-title {
+  color: var(--white-font);
+}
+
+.ant-modal-close-x {
+  color: var(--white-font);
+  font-size: 20px;
+}
+
+.ant-modal-footer {
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ant-input-search>.ant-input-group>.ant-input-group-addon:last-child {
+  inset-inline-start: -1px;
+  padding: 0;
+  border: 0;
+  display: none;
+}

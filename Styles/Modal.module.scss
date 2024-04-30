@@ -1,0 +1,71 @@
+.tokenModal {
+  text-align: start;
+  .header_text,
+  h3 {
+    color: #878794;
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .token_container {
+    .all_token_card {
+      border: none;
+
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px;
+      margin-bottom: 5px;
+      .coin_img {
+        width: 35px;
+        height: 35px;
+      }
+      .iner_token_card {
+        display: flex;
+        gap: 20px;
+        .token_span {
+          font-size: 14px;
+          color: #878794;
+        }
+      }
+    }
+  }
+
+  .token_container {
+    display: flex;
+    flex-direction: column;
+
+    .token_cards {
+      border: 1px solid #efefef;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px;
+      margin-bottom: 5px;
+      .coin_img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .token_cards :hover {
+      background-color: #2d23f3;
+    }
+    .iner_token_card {
+      display: flex;
+      gap: 20px;
+      .token_span {
+        font-size: 12px;
+        color: #878794;
+      }
+    }
+  }
+  .sub_head_text {
+    color: #0000;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}

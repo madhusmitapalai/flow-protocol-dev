@@ -1,4 +1,6 @@
 import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 
 import "./globals.css";
 // import { AntdRegistry } from "@ant-design/nextjs-registry";
