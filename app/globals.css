@@ -11,6 +11,7 @@ body {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500;
 
+
 }
 
 a, ul {
@@ -18,9 +19,11 @@ a, ul {
 }
 
 .main-container {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  transform: translate(50%, 3%);
+
 }
 
 .div-content {
@@ -29,11 +32,16 @@ a, ul {
   height: 200vh;
 }
 
+.children_div {
+
+  background-color: #f9fafc;
+}
+
 .topbar {
   width: 15%;
   display: flex;
   flex-direction: column;
-  background-color: #F9FAFC;
+  background-color: #fff;
   height: 100vh;
   padding: 10px;
   padding-top: 50px;
@@ -44,7 +52,7 @@ a, ul {
 
 .sub_container {
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 
@@ -60,4 +68,31 @@ a, ul {
   font-size: 16px;
   font-weight: 500;
 
+}
+
+/* antd custum styles */
+
+:where(.css-dev-only-do-not-override-aj88s5).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+  /* border-left: 1px solid #d9d9d9 !important; */
+  background: #ffffff;
+  /* border-radius: 2px; */
+  border: none;
+  text-align: center;
+}
+
+
+.ant-select-outlined:not(.ant-select-disabled):hover .ant-select-selector,
+.ant-select-outlined:not(.ant-select-disabled):focus .ant-select-selector {
+  box-shadow: none !important;
+  outline: none;
+  border: none;
+  border-color: transparent !important;
+  text-align: center;
+}
+
+
+.ant-select-selection-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

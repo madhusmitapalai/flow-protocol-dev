@@ -1,0 +1,123 @@
+/* Dashboard */
+.dashboardContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.selectOption {
+  height: 100%;
+  width: 330px;
+}
+.from {
+  padding: 5px 10px;
+}
+.groupCard {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ffff;
+  padding: 10px;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+.singleCard {
+  width: 400px;
+  height: 60px;
+  background-color: #ffff;
+  padding: 0 5px;
+  display: flex;
+  // gap: 5px;
+  border-radius: 5px;
+  // justify-content: space-between;
+  align-items: center;
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.thirdDiv {
+  width: 400px;
+  height: 80px;
+  background-color: #e9e9fe;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+}
+
+.fromCard {
+  background-color: transparent;
+  padding: 10px;
+  float: right;
+  // border-right: 1px solid #efefef;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  span {
+    font-size: 18px;
+  }
+}
+
+.hr {
+  background-color: #f9fafc;
+  width: 1px;
+  height: 100%;
+  border: 0.2px solid #efefef;
+  margin: 10px 0;
+}
+
+.firstInnercard {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+  // border-right: 1px solid #efefef;
+  width: 80%;
+  span {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.global_Card_Height {
+  height: 100px;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  background-color: blue;
+}
+
+.select_span_option {
+  font-size: 20px;
+  font-weight: 600;
+}
+.optionImage {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+.arrow_Div {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.2px solid #efefef;
+  cursor: pointer;
+  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}

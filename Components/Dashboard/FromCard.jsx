@@ -1,0 +1,55 @@
+import { Select } from "antd";
+import Image from "next/image";
+import React from "react";
+import optionImg1 from "../../assets/option1.png";
+import optionImg2 from "../../assets/option2.png";
+import styles from "../../Styles/Dashboard.module.scss";
+const { Option } = Select;
+const FromCard = ({ items, setSelectedItem }) => {
+  const handleSelectChange = (value) => {
+    const selectedItem = items.find((item) => item.key === value);
+    setSelectedItem(selectedItem);
+  };
+  return (
+    <section className={styles.groupCard}>
+      <div className={styles.singleCard}>
+        <span className={styles.from}>From</span>
+        <hr className={styles.hr} />
+        <Select
+          className={styles.selectOption}
+          onChange={handleSelectChange}
+          defaultValue="1"
+          placeholder="Select an item"
+        >
+          {items.map((item) => (
+            <Option key={item.key} value={item.key} className={styles.option}>
+              <Image
+                src={item.image}
+                alt={item.value}
+                className={styles.optionImage}
+              />
+              <span className={styles.select_span_option}> {item.value}</span>
+            </Option>
+          ))}
+        </Select>
+      </div>
+      <div className={`${styles.singleCard} ${styles.global_Card_Height}`}>
+        <div className={styles.firstInnercard}>
+          <span>You are sending</span>
+          <h1>0.1</h1>
+        </div>
+        <hr className={styles.hr} />
+        <span className={styles.fromCard}>
+          <Image
+            src={optionImg2}
+            alt={"option-image"}
+            className={styles.card1Img}
+          />
+          <span>ETH </span>
+        </span>
+      </div>
+    </section>
+  );
+};
+
+export default FromCard;

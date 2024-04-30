@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <Header />
           <div className="sub_container">
             <Topbar />
-            {children}
+            <div className="children_div"> {children}</div>
           </div>
         </ConfigProvider>
       </body>

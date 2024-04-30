@@ -4,7 +4,7 @@ import React from "react";
 const Explorer = () => {
   return (
     <div className="main-container ">
-      <div style={{ paddingTop: "50px", width: "80%" }}>explore</div>
+      <div>explore</div>
     </div>
   );
 };
