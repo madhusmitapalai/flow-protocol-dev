@@ -12,7 +12,11 @@ const Header = () => {
         <h3 className="header_title">Flow Protocol</h3>
       </div>
       <div className={styles.button_div}>
-        <Button type="primary" className={styles.collectBtn}>
+        <Button
+          type="primary"
+          className={styles.collect_btn}
+          style={{ display: "flex" }}
+        >
           <Image src={wallet} alt="wallet-img" />
           Collect Wallet
         </Button>
