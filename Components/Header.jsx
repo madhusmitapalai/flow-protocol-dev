@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "antd";
 import React from "react";
-import styles from "../Styles/Header.module.css";
+import styles from "../Styles/Header.module.scss";
 import logo from "../assets/Logo.png";
 import wallet from "../assets/wallet.png";
 const Header = () => {
