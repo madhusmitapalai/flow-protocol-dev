@@ -1,27 +1,59 @@
 /* Dashboard */
-.dashboard_container {
+.dashboardContainer {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     width: 100%;
-    transform: translate(80%, 0%);
+
+
 }
 
-.group_card {
+.selectOption {
+    height: 100%;
+    width: 330px;
+    border: none;
+    background-color: transparent;
+
+}
+
+.groupCard {
     display: flex;
     flex-direction: column;
-}
-
-.single_card {
-    width: 400px;
-    height: 80px;
+    border: 1px solid hsl(0, 0%, 93%);
     background-color: #F9FAFC;
-    border: 1px solid #EEEEEE;
-    margin-bottom: 5px;
+    border: 0.1px solid #F9FAFC;
 }
 
-.third_div {
+.singleCard {
+    width: 400px;
+    height: 60px;
+    background-color: #ffff;
+
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    cursor: text;
+    width: 100%;
+    height: auto;
+    padding: 5px 11px;
+    border-radius: 5px;
+    margin: 0 0 0 0;
+}
+
+/* 
+.ant-select.ant-select-single {
+    font-size: 14px;
+    height: 32px !important;
+} */
+
+.thirdDiv {
     width: 400px;
     height: 80px;
     background-color: #e9e9fe;
@@ -29,17 +61,25 @@
     justify-content: space-between;
 }
 
-
-.ant-card .ant-card-body {
-    padding: 5px;
-    border-radius: 0;
-}
-
 .logo {
     width: 20px;
     height: 20px;
 }
 
-.ant-dropdown-button {
-    width: 390px !important;
+.from {
+
+    background-color: transparent;
+    padding: 10px;
+}
+
+.ant-select .ant-select-outlined {
+    border: none;
+    background-color: transparent;
+}
+
+.hr {
+    color: hsl(0, 0%, 93%);
+    background-color: hsl(0, 0%, 93%);
+    width: 1px;
+    height: 100%;
 }

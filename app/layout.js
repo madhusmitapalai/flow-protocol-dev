@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 // import "antd/dist/antd.css";
 import "./globals.css";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
+// import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Topbar from "@/Components/Topbar";
 import Header from "@/Components/Header";
 import Theme from "@/Theme/themeConfig";
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <Header />
           <div className="sub_container">
             <Topbar />
-            <AntdRegistry>{children}</AntdRegistry>
+            {children}
           </div>
         </ConfigProvider>
       </body>
